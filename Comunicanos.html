@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murcia RP - Comunícanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Murcia RP - Comunícanos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ajustes.html">Ajustes</a></li>
+        </ul>
+    </nav>
+    <section id="informacion">
+        <h2>Información de Contacto</h2>
+        <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+        <ul>
+            <li>Correo Electrónico: <a href="mailto:info@murciarp.com">info@murciarp.com</a></li>
+            <li>Teléfono: +123 456 789</li>
+            <li>Redes Sociales: <a href="https://twitter.com/MurciaRP" target="_blank">Twitter</a>, <a href="https://www.facebook.com/MurciaRP" target="_blank">Facebook</a></li>
+        </ul>
+    </section>
+    <section id="formulario">
+        <h2>Formulario de Contacto</h2>
+        <form action="enviar_mensaje.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
